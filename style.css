@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weigth: 600;
+  color: white;
+}
+
+header {
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+header .menu {
+  display: flex;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.dropdown a {
+  color: white;
+  text-decoration: none;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#background {
+  background: linear-gradient(blue, white);
+}
