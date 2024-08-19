@@ -25,20 +25,19 @@
 header {
   display: flex;
   padding: 0 20px;
-  justify-content: space-between;
 }
 
 header .menu {
   display: flex;
 }
 
-.dropdown {
+header ul.dropdown {
   display: flex;
-  align-items: center;
+
   justify-content: space-between;
   list-style: none;
 }
-.dropdown a {
+header ul.dropdown > li > a {
   color: white;
   text-decoration: none;
   padding: 0 20px;
@@ -48,4 +47,32 @@ header .menu {
 
 #background {
   background: linear-gradient(blue, white);
+}
+
+header ul.dropdown > li {
+  position: relative;
+}
+
+header ul.dropdown > li > ul {
+  position: absolute;
+  background-color: rgb(177, 149, 239);
+  list-style: none;
+  top: 30px;
+  width: 150px;
+  display: none;
+}
+header ul.dropdown > li:hover > ul {
+  display: block;
+}
+header ul.dropdown > li > ul > li:hover {
+  background-color: rgb(172, 1, 172);
+}
+header ul.dropdown > li > ul > li {
+  padding: 10px;
+}
+header ul.dropdown > li > ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
 }
