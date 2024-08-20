@@ -24,16 +24,14 @@
 
 header {
   display: flex;
-  padding: 0 20px;
 }
 
-header .menu {
+header .dropdown {
   display: flex;
 }
 
 header ul.dropdown {
   display: flex;
-
   justify-content: space-between;
   list-style: none;
 }
@@ -57,7 +55,7 @@ header ul.dropdown > li > ul {
   position: absolute;
   background-color: rgb(177, 149, 239);
   list-style: none;
-  top: 30px;
+  top: 25px;
   width: 150px;
   display: none;
 }
